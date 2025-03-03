@@ -21,7 +21,7 @@ fn main() -> std::io::Result<()> {
     fs::create_dir_all(release_dir)?;
 
     // Verify executable exists
-    let exe_path = Path::new("target/release/platformer.exe");
+    let exe_path = Path::new("target/release/music_visualiser.exe");
     if !exe_path.exists() {
         println!("Error: Could not find executable at {:?}", exe_path);
         return Ok(());
@@ -29,7 +29,7 @@ fn main() -> std::io::Result<()> {
 
     // Copy the executable
     println!("Copying executable from {:?}", exe_path);
-    fs::copy(exe_path, release_dir.join("platformer.exe"))?;
+    fs::copy(exe_path, release_dir.join("music_visualiser.exe"))?;
 
     // Copy SDL2 DLLs from debug folder
     let sdl2_dlls = [
