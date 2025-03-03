@@ -1,0 +1,21 @@
+[package]
+name = "music_visualiser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sdl2 = { version = "0.37.0", features = ["ttf"] }
+rfd = "0.15.2"  # This will give us a native file picker
+rustfft = "6.2.0"
+symphonia = { version = "0.5.4", features = ["default", "mp3", "wav", "aac", "alac", "isomp4", "pcm"] }
+rodio = "0.20.1"
+ringbuf = "0.3"
+cpal = "0.15"
+rand = "0.9.0"
+
+[build-dependencies]
+pkg-config = "0.3"
+
+[[bin]]
+name = "prepare_release"
+path = "prepare_release.rs"
