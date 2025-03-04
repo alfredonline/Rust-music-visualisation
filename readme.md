@@ -4,43 +4,38 @@ A real-time music visualization application written in Rust using SDL2.
 
 ## Features
 - Audio playback support for MP3, WAV, and OGG files
-- Real-time FFT-based visualisation
-- Customisable visualisation colors
+- Real-time FFT-based visualization
+- Customizable visualization colors
 - Play/pause and file loading controls
 
-## Dependencies
-- SDL2
-- SDL2_ttf
-
-## Installation
-
-### Windows
-1. Install [Rust](https://rustup.rs/)
-2. Install SDL2 development libraries:
-   - Download SDL2 and SDL2_ttf development libraries
-   - Place the DLL files in your project's target/debug directory
-
-
-   
-3. The executable and required files will be in the `release` directory
+## Download and Run
+1. Go to the [Releases](https://github.com/yourusername/music-visualizer/releases) page
+2. Download the latest release zip file for your platform
+3. Extract the zip file
+4. Run the executable
 
 ## Usage
-1. Navigate to the release directory
-2. Run the executable
-3. Click "Load song" to select an audio file
-4. Use the RGB sliders to customize visualization colors
-5. Click "Play" to start playback
-6. Click "Randomiser" to randomise the visualisation (updates every second)
+1. Click "Load song" to select an audio file
+2. Use the RGB sliders to customize visualization colors
+3. Click "Play" to start playback
+4. Click "Randomiser" to randomize the visualization (updates every second)
 
-## Development
-- Build debug version: `cargo build`
-- Run debug version: `cargo run`
-- Build release version: `cargo build --release`
-
-## things to do 
-
-- Add tests to improve code quality and DX
+## Future Improvements
 - Add a settings menu
 - Add a help menu
 - Add playlist support
 - Add a volume slider
+
+## For Developers
+If you want to build from source:
+
+### Dependencies
+- Rust
+- SDL2
+- SDL2_ttf
+
+### Building
+1. Clone the repository
+2. Run `cargo build --release`
+3. Run `cargo run --bin prepare_release` to create a distributable package
+
